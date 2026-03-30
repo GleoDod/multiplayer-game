@@ -1,4 +1,4 @@
-let ws = new WebSocket("wss://DEINE-RENDER-URL.onrender.com")
+let ws = new WebSocket("wss://multiplayer-game-po6d.onrender.com")
 
 let c = document.getElementById("c")
 let d = c.getContext("2d")
