@@ -1,8 +1,10 @@
-let ws = new WebSocket("wss://dein-service.onrender.com")
+let ws = new WebSocket("wss://DEINE-RENDER-URL.onrender.com")
+
+let c = document.getElementById("c")
+let d = c.getContext("2d")
 
 c.width = innerWidth
 c.height = innerHeight
-let d = c.getContext("2d")
 
 let mode = prompt("Host oder Join?").toLowerCase()
 let room = prompt("Room Code:")
