@@ -1,4 +1,4 @@
-let ws = new WebSocket("wss://DEIN-SERVER.onrender.com")
+let ws = new WebSocket("wss://dein-service.onrender.com")
 
 c.width = innerWidth
 c.height = innerHeight
