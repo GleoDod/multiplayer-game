@@ -81,13 +81,15 @@ input()
 d.fillStyle = "#111"
 d.fillRect(0, 0, c.width, c.height)
 
+if (players) {
 for (let id in players) {
 let p = players[id]
-d.fillStyle = p.c
-d.fillRect(p.x, p.y, 20, 20)
+if (!p) continue
+
+d.fillStyle = p.c || "white"
+d.fillRect(p.x || 0, p.y || 0, 20, 20)
+}
 }
 
 requestAnimationFrame(loop)
 }
-
-loop()
